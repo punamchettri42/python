@@ -1,0 +1,23 @@
+advanced python 
+
+exception handling in python
+
+theere are many built in exceptions which are rais
+ed in python when something goes wrong. exceptions in python can be handled using a try statement the code that handles the exception is written in the except clause
+
+try:
+
+except exception as e:
+    print(e)
+
+    when the exception is handle
+    
+    d, the code flow continues wihtout program interprettion
+
+
+when the exception is handled , the code flow continues without program interuuption.
+we can also specify the exceptions  to catch like below.
+
+
+
+when the exception is handled ,the coede flow continuese without program interprettion

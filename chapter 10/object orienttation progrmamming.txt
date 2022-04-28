@@ -1,0 +1,47 @@
+Chapter 10 – Object-Oriented Programming
+Solving a problem by creating objects is one of the most popular approaches in programming. This is called object-oriented programming.
+
+This concept focuses on using reusable code. (Implements DRY principle)
+Class
+A class is a blueprint for creating objects.
+Class Employee:		[classname is written in PascalCase]
+	#methods & variables
+Object
+An object is an instantiation of a class. When class is defined, a template(info) is defined. Memory is allocated only after object instantiation.
+
+Objects of a given class can invoke the methods available to it without revealing the implementation details to the user.     #Abstraction & Encapsulation!
+Class Employee:
+	company = “Google” 	#Specific to each class
+harry = Employee()	#Object instantiation
+harry.company
+Employee.company = “YouTube”	#changing class attribute
+
+Instance Attributes
+
+An attribute that belongs to the Instance (object)
+
+Assuming the class from the previous example:
+
+harry.name = “Harry”
+harry.salary = “30K”	#Adding instance attributes
+harry.getSalary()
+class Employee:
+	company = “Google”
+	def getSalary(self):
+		print(“Salary is not there”)
+@staticmethod	#decorator to mark greet as a static method
+def greet():
+	print(“Hello user”)
+@staticmethod	#decorator to mark greet as a static method
+def greet():
+	print(“Hello user”)
+__init__() is a special method which runs as soon as the object is created.
+
+__init__() method is also known as constructor.
+
+class Employee:
+	def __init__(self,name):
+		self.name = name
+	def getSalary(self):
+		#Some code…
+harry = Employee(“Harry”)	#Object can be instantiated using constructor like this!
